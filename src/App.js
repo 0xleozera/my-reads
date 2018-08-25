@@ -7,7 +7,6 @@ import Search from './components/Search';
 import BookService from './service/BookService';
 
 import './App.css';
-import BaseService from './service/BaseService';
 
 class BooksApp extends React.Component {
   constructor(props) {
@@ -44,7 +43,7 @@ class BooksApp extends React.Component {
       stateBooks[bookIndex].shelf = updatedShelf;
     }
 
-    const updateBook = await BaseService.update(book, updatedShelf);
+    const updateBook = await BookService.updateBook(book, updatedShelf);
 
     if (updateBook.success) {
       this.setState({ books: stateBooks });

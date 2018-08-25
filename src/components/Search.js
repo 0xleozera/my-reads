@@ -28,7 +28,7 @@ class Search extends Component {
     const booksFound = await BookService.search(trimmedQuery, 10);
 
     if (booksFound.success) {
-      const { books } = booksFound.data.books
+      const { books } = booksFound.data;
 
       if (books && books.length) {
         const totalBooks = books.map((book) => {
