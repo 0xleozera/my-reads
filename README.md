@@ -9,7 +9,7 @@
 - Instalar Node.JS e Yarn
 - Clonar esse repositório
 
-## NPM scripts
+## Instalar dependências
 
 Instalar as dependências do projeto:
 
