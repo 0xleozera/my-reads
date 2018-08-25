@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+
 import './App.css';
 
 class BooksApp extends React.Component {
   state = {}
 
-  render () {
+  render() {
     return (
       <div className="app">
         <Route path="/search" render={ () => (
