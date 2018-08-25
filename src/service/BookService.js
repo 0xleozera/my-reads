@@ -1,7 +1,7 @@
 import BaseService from './BaseService';
 
 class BookService extends BaseService {
-  get = async (bookId) => await this.get(`/books/${bookId}`);
+  //get = async (bookId) => await this.get(`/books/${bookId}`);
 
   getAll = async () => await this.get('/books');
 
